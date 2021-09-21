@@ -1,0 +1,37 @@
+{
+  "name": "show-price",
+  "version": "0.0.1",
+  "description": "Displays information about any Cloud provider environment pricing",
+  "type": "module",
+  "files": [
+    "price_db",
+    "src"
+  ],
+  "main": "src/main.js",
+  "bin": {
+    "show-price": "src/main.js"
+  },
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vpaslav/show-price.git"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ec2": "^3.31.0",
+    "@types/yargs": "^17.0.2",
+    "aws-sdk": "^2.989.0",
+    "show-price": "file:",
+    "uuid": "^8.3.2",
+    "yargs": "^17.1.1",
+    "yarn": "^1.22.11"
+  },
+  "bugs": {
+    "url": "https://github.com/vpaslav/show-price/issues"
+  },
+  "homepage": "https://github.com/vpaslav/show-price#README.md",
+  "author": "Volodymyr Paslavskyy",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
