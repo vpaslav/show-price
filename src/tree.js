@@ -9,10 +9,10 @@
  *          |_ instanceId 3: key: name, value: price
  *          |_ instanceId 4: key: name, value: price
  *
- * Then summarize them and print to a terminal, by required path pattern.
+ * Then summarize them and print to a terminal, by a path pattern.
  * Path pattern determines which tree parts to display:
  * - '*' means - display only root nodes
- * - '*.*' means - display root nodes and level 1 children
+ * - '*.*' means - display root nodes and level 1 children, etc
  */
 class TreeNode {
   /**
