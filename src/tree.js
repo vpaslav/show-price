@@ -23,9 +23,17 @@ class TreeNode {
    * @param {TreeNode} parent  TreeNode parent instance
    */
   constructor(key, parent=null) {
+    // "key" is name of a node, typically this is service or environment name.
+    // Example: dev, prod.
     this.key = key;
+
+    // Main reason why "path" exists is better navigation over a tree.
+    // Example: dev.frontend.instanceID
     this.path = parent ? `${parent.path}.${key}` : '';
+
+    // "value" field stores a price of an instance.
     this.value = null;
+
     this.children = [];
   }
   /**
