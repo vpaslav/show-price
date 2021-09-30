@@ -100,7 +100,7 @@ class TreeNode {
    */
   static displayPrice(node, pathRegexp) {
     if (node.path.match(pathRegexp)) {
-      console.log(`${node.path} = ${node.value}`);
+      console.log(`${node.path} = ${node.value}$ per hour`);
     }
     for (const child of node.children) {
       TreeNode.displayPrice(child, pathRegexp);
